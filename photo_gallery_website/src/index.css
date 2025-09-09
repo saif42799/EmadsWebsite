@@ -1,0 +1,55 @@
+*{
+    margin: 0;   /*removes any default margins*/
+    padding: 0;
+}
+
+body{
+    min-height: 100vh; /*Ensures content occupies entire screen*/
+    background-color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    background-color: rgb(77, 77, 77);
+    /* display: flex; */
+    font-size: 2rem;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav ul{ 
+    width: 100%;
+    list-style: none;
+    align-items: center;
+
+}
+
+nav li{
+    height: 40px;
+}
+
+.navHoverEffect{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+    display: inline-block
+}
+
+.navHoverEffect:hover{
+    transform: translateX(15px); 
+    color: aqua;
+}
+
+.logoDiv{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logoImg{
+    height: 150px;
+
+}

@@ -5,15 +5,14 @@
 
 body{
     min-height: 100vh; /*Ensures content occupies entire screen*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(158, 149, 149);
     font-family: 'Inter', sans-serif;
 }
 
 nav{
-    background-color: rgb(77, 77, 77);
+    /* background-color: rgb(77, 77, 77); */
     /* display: flex; */
     font-size: 2rem;
-
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -37,19 +36,93 @@ nav li{
 }
 
 .navHoverEffect:hover{
-    transform: translateX(15px); 
-    color: aqua;
+    transform: translateX(15px) scale(1.1); 
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMoble{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
+
+
 .logoDiv{
-    background-color: tomato;
+    /* background-color: tomato; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .logoImg{
     height: 150px;
+}
 
+.bio{
+    /* background-color: rgb(0, 136, 255); */
+    text-align: right;
+    color: white; 
+    margin-bottom: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+}
+
+.headImg{
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.headDiv{
+    /* background-color: aqua; */
+    text-align: right;
+}
+
+#bioName{
+    font-size: 1.7rem;
+}
+
+#bioAdjective{
+    font-size: 1rem;
+    height: 20px;
 }

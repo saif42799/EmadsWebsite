@@ -5,7 +5,7 @@
 
 body{
     min-height: 100vh; /*Ensures content occupies entire screen*/
-    background-color: rgb(158, 149, 149);
+    background-color: rgb(0, 0, 0);
     font-family: 'Inter', sans-serif;
 }
 
@@ -39,12 +39,47 @@ nav li{
     transform: translateX(15px) scale(1.1); 
 }
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+        50% {
+        opacity: 0.5;
+    }
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+}
 .sidebar{
+    
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    display: none;
     z-index: 999;
     background-color: rgb(255, 255, 255, 0.0);
     backdrop-filter: blur(10px);
@@ -53,6 +88,8 @@ nav li{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    animation: slideIn 1s ease-out 0.5s 1 normal forwards;
+
 }
 
 .sidebar li{
@@ -65,26 +102,26 @@ nav li{
 
 .menu-button{
     display: none;
+    position: fixed;
+    left: 20px;
+    top: 40px;
 }
 
-@media(max-width: 800px){
-    .hideOnMoble{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
+.x-button{
+    margin-left: 20px;
+    margin-top: 40px;
 }
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
+#homeMargin{
+    margin-top: 80px;
 }
 
-
-
-
+.navOnMoble{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 2.5rem;
+}
 
 .logoDiv{
     /* background-color: tomato; */
@@ -96,6 +133,9 @@ nav li{
 .logoImg{
     height: 150px;
 }
+
+
+
 
 .bio{
     /* background-color: rgb(0, 136, 255); */
@@ -125,4 +165,45 @@ nav li{
 #bioAdjective{
     font-size: 1rem;
     height: 20px;
+}
+
+
+@media(max-width: 800px){
+
+
+
+
+
+    .hideOnMoble{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .logoImg{
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    nav li{
+        height: 55px;
+    }
+
+    .bio{
+        margin-bottom: 70px;
+        right: 50px;
+    }
+
+    .headImg{
+        height: 150px;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
 }

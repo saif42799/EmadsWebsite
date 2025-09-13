@@ -10,25 +10,12 @@ body{
 }
 
 nav{
-    /* background-color: rgb(77, 77, 77); */
-    /* display: flex; */
     font-size: 2rem;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-nav ul{ 
-    width: 100%;
-    list-style: none;
-    align-items: center;
-
-}
-
-nav li{
-    height: 40px;
-}
-
-.navHoverEffect{
+/* .navHoverEffect{
     text-decoration: none;
     color: white;
     transition: transform 0.5s ease-in-out;
@@ -37,94 +24,47 @@ nav li{
 
 .navHoverEffect:hover{
     transform: translateX(15px) scale(1.1); 
-}
+} */
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-        }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-        50% {
-        opacity: 0.5;
-    }
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
 
-@keyframes slideOut {
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+
+
+
+.links-contaainer{
+    font-size: 2rem;
     
-}
-.sidebar{
-    
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    z-index: 999;
-    background-color: rgb(255, 255, 255, 0.0);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    animation: slideIn 1s ease-out 0.5s 1 normal forwards;
-
+    margin-right: 100px;
+    align-content: right;
 }
 
-.sidebar li{
+.nav-Link{
     width: 100%;
-}
-
-.sidebar a{
-    width: 100%;
-}
-
-.menu-button{
-    display: none;
-    position: fixed;
-    left: 20px;
-    top: 40px;
-}
-
-.x-button{
-    margin-left: 20px;
-    margin-top: 40px;
-}
-
-#homeMargin{
-    margin-top: 80px;
-}
-
-.navOnMoble{
+    list-style: none;
     text-decoration: none;
+    align-items: center;
     color: white;
-    margin-left: 30px;
-    font-size: 2.5rem;
+}
+
+ nav ul{ 
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-button, .close-button {
+    display: none;
+    
 }
 
 .logoDiv{
-    /* background-color: tomato; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,11 +74,7 @@ nav li{
     height: 150px;
 }
 
-
-
-
 .bio{
-    /* background-color: rgb(0, 136, 255); */
     text-align: right;
     color: white; 
     margin-bottom: 100px;
@@ -154,7 +90,6 @@ nav li{
 }
 
 .headDiv{
-    /* background-color: aqua; */
     text-align: right;
 }
 
@@ -167,19 +102,20 @@ nav li{
     height: 20px;
 }
 
-
 @media(max-width: 800px){
-
-
-
-
-
-    .hideOnMoble{
-        display: none;
-    }
-
-    .menu-button{
-        display: block;
+    .links-contaainer{
+        background-color: rgb(255, 255, 255, 0.0);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        transition: 0.75s ease-in-out;
     }
 
     .logoImg{
@@ -187,8 +123,40 @@ nav li{
         height: 100px;
     }
 
+     nav ul{ 
+        margin-top: 50px;
+        margin-left: 40px;
+    }  
+
     nav li{
-        height: 55px;
+        font-size: 2rem;
+        height: 60px;
+    }
+
+    .open-button, .close-button {
+        display: block;
+    }
+    .open-button {
+        margin-left: -70px;
+        margin-top: -40px;
+    }
+
+    .close-button{
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    #sidebar-active:checked ~ .links-contaainer{
+        right: 0;
+    }
+
+     #sidebar-active:checked ~ overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
     }
 
     .bio{
@@ -202,8 +170,3 @@ nav li{
     }
 }
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-}

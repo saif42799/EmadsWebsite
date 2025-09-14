@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 function Navbar() {
 
@@ -21,21 +22,18 @@ function Navbar() {
                 </label>
 
                 <ul>
-                    <li><a className="nav-Link" href="#">HOME</a></li>
-                    <li><a className="nav-Link" href="#">GALLERY</a></li>
-                    <li><a className="nav-Link" href="#">INFORMATION</a></li>
+                    <Link className="link" to="/">
+                        <li className="nav-Link" href="#">HOME</li>
+                    </Link>
+
+                    <Link className="link" to="/Gallery">
+                        <li className="nav-Link" href="#">GALLERY</li>
+                    </Link>
+
+                    <Link className="link" to="/Information">
+                        <li className="nav-Link" href="#">INFORMATION</li>
+                    </Link>
                 </ul>
-            </div>
-
-            <div className="bio">
-                <div className="headDiv">
-                    <img className="headImg" src="/images/emad_Head.png" alt="Head"></img>
-                </div>
-
-                <p id="bioName">EMAD SHAIKH</p>
-                <p id="bioAdjective">26</p>
-                <p id="bioAdjective">Designer</p>
-                <p id="bioAdjective">New York</p>
             </div>
 
         </nav>

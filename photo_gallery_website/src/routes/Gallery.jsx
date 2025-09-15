@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 function Gallery() {
     return (
@@ -6,11 +7,13 @@ function Gallery() {
             <div className="collections">
                 <h1>COLLECTIONS</h1>
                 <div className="collections-Names">
-                    <p>Tokyo, Japan</p>
-                    <p>Osaka, Japan</p>
-                    <p>Kyoto, Japan</p>
-                    <p>New York, USA</p>
-                    <p>Muse</p>
+                    
+                    <Link className="coll-Link" to={"/Tokyo"}><p>TOKYO, JAPAN</p></Link>
+                    <Link className="coll-Link" to={"/Osaka"}><p>OSAKA, JAPAN</p></Link>
+                    <Link className="coll-Link" to={"/Kyoto"}><p>KYOTO, JAPAN</p></Link>
+                    <Link className="coll-Link" to={"/NewYork"}><p>NEW YORK, USA</p></Link>
+                    <Link className="coll-Link" to={"/Muse"}><p>MUSE</p></Link>
+
                 </div>
 
             </div>

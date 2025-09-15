@@ -3,6 +3,11 @@ import Navbar from "./components/Navbar.jsx"
 import Home from './routes/Home.jsx'
 import Gallery from "./routes/gallery.jsx";
 import Information from "./routes/information.jsx";
+import Tokyo from "./routes/collectionPages/tokyo.jsx";
+import Osaka from "./routes/collectionPages/Osaka.jsx";
+import Kyoto from "./routes/collectionPages/Kyoto.jsx";
+import NewYork from "./routes/collectionPages/NewYork.jsx";
+import Muse from "./routes/collectionPages/Muse.jsx";
 
 function App() {
   return (
@@ -12,6 +17,11 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Gallery" element={<Gallery></Gallery>}></Route>
         <Route path="/Information" element={<Information></Information>}></Route>
+        <Route path="/Tokyo" element={<Tokyo></Tokyo>}></Route>
+        <Route path="/Osaka" element={<Osaka></Osaka>}></Route>
+        <Route path="/Kyoto" element={<Kyoto></Kyoto>}></Route>
+        <Route path="/NewYork" element={<NewYork></NewYork>}></Route>
+        <Route path="/Muse" element={<Muse></Muse>}></Route>
       </Routes>
     </>
   );

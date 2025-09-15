@@ -22,17 +22,29 @@ function Navbar() {
                 </label>
 
                 <ul>
-                    <Link className="link" to="/">
-                        <li className="nav-Link" href="#">HOME</li>
-                    </Link>
+                    <li className="nav-Link">
+                        <Link className="link" to="/" onClick={() => {
+                            document.getElementById('sidebar-active').checked = false;
+                        }}>
+                            HOME
+                        </Link>
+                    </li>
 
-                    <Link className="link" to="/Gallery">
-                        <li className="nav-Link" href="#">GALLERY</li>
-                    </Link>
+                    <li className="nav-Link">
+                        <Link className="link" to="/Gallery" onClick={() => {
+                            document.getElementById('sidebar-active').checked = false;
+                        }}>
+                            GALLERY
+                        </Link>
+                    </li>
 
-                    <Link className="link" to="/Information">
-                        <li className="nav-Link" href="#">INFORMATION</li>
-                    </Link>
+                    <li className="nav-Link">
+                        <Link className="link" to="/Information" onClick={() => {
+                            document.getElementById('sidebar-active').checked = false;
+                        }}>
+                            INFORMATION
+                        </Link>
+                    </li>
                 </ul>
             </div>
 

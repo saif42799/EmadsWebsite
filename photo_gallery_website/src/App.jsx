@@ -8,7 +8,7 @@ import Osaka from "./routes/collectionPages/Osaka.jsx";
 import Kyoto from "./routes/collectionPages/Kyoto.jsx";
 import NewYork from "./routes/collectionPages/NewYork.jsx";
 import Muse from "./routes/collectionPages/Muse.jsx";
-import LiquidEther from './LiquidEther';
+
 
 function App() {
   return (

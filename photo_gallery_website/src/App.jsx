@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar.jsx"
 import Home from './routes/Home.jsx'
-import Gallery from "./routes/gallery.jsx";
-import Information from "./routes/information.jsx";
-import Tokyo from "./routes/collectionPages/tokyo.jsx";
+import Gallery from "./routes/Gallery.jsx";
+import Information from "./routes/Information.jsx";
+import Tokyo from "./routes/collectionPages/Tokyo.jsx";
 import Osaka from "./routes/collectionPages/Osaka.jsx";
 import Kyoto from "./routes/collectionPages/Kyoto.jsx";
 import NewYork from "./routes/collectionPages/NewYork.jsx";

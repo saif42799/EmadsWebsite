@@ -14,43 +14,24 @@ function App() {
   return (
     <>
 
-      <div style={{ width: '100%', height: '100vh', position: 'relative'  }}>
+<div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
+  <LiquidEther
+    colors={['#93760B', '#B8B8B8', '#FFD500']}
+    isViscous={false}
+    viscous={20}                // reduced from 30 → lighter
+    iterationsViscous={15}      // reduced from 32 → much lighter
+    iterationsPoisson={15}      // reduced from 32 → much lighter
+    resolution={0.25}           // lower resolution = less pixel stress
+    isBounce={false}
+    autoDemo={true}
+    autoSpeed={0.4}             // slower movement = fewer calculations
+    autoIntensity={1.2}         // reduced from 2.2 → less GPU redraw
+    takeoverDuration={0.25}
+    autoResumeDelay={3000}
+    autoRampDuration={0.6}
+  />
+</div>
 
-        <LiquidEther
-
-          colors={['#93760B', '#B8B8B8', '#FFD500']}
-
-          mouseForce={20}
-
-          cursorSize={100}
-
-          isViscous={false}
-
-          viscous={30}
-
-          iterationsViscous={32}
-
-          iterationsPoisson={32}
-
-          resolution={0.5}
-
-          isBounce={false}
-
-          autoDemo={true}
-
-          autoSpeed={0.5}
-
-          autoIntensity={2.2}
-
-          takeoverDuration={0.25}
-
-          autoResumeDelay={3000}
-
-          autoRampDuration={0.6}
-
-        />
-
-      </div>
 
 
       <Navbar></Navbar>

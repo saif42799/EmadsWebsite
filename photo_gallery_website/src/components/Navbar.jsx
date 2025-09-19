@@ -46,6 +46,10 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
+
+                <div className='animated-background'>
+
+                </div>
             </div>
 
         </nav>

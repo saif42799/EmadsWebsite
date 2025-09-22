@@ -19,9 +19,8 @@ body {
 }
 
 nav {
-    font-size: 2rem;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     position: relative;
 }
 
@@ -31,8 +30,7 @@ nav {
 }
 
 .links-contaainer {
-    font-size: 2rem;
-
+    font-size: 1rem;
     margin-right: 100px;
     align-content: right;
 }
@@ -43,7 +41,7 @@ nav {
 }
 
 .nav-Link {
-    width: 90%;
+    width: 50%;
     list-style: none;
     align-items: center;
     transition: transform 0.5s ease-in-out;
@@ -74,7 +72,7 @@ nav ul {
 }
 
 nav li {
-    height: 50px;
+    height: 40px;
 }
 
 #sidebar-active {
@@ -97,7 +95,7 @@ nav li {
 }
 
 .logoImg {
-    height: 150px;
+    height: 100px;
     
 }
 
@@ -118,7 +116,7 @@ nav li {
     margin-bottom: 100px;
     position: fixed;
     bottom: 0;
-    right: 100px;
+    right: 50px;
     opacity: 0;
     transform: translateX(20px);
     animation: bio-transition 1.5s ease-out forwards;
@@ -136,31 +134,32 @@ nav li {
 }
 
 .headImg {
-    height: 200px;
+    height: 100px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
 .headDiv {
+    margin-left: 30px;
     text-align: right;
     overflow: hidden;
     border-radius: 50%;
-    height: 200px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 15px;
     position: relative;
 }
-
 
 .headDiv::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 50px;
+  right: 0;
+  width: 40px;
   height: 100%;
-  background: rgb(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
   transform: skew(45deg) translateX(300px);
-  transition: 0.8s;
+  transition: 2s;
 }
 
 .headDiv:hover:before {
@@ -169,11 +168,11 @@ nav li {
 
 
 #bioName {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 #bioAdjective {
-    font-size: 1rem;
+    font-size: 0.8rem;
     height: 20px;
 }
 
@@ -186,7 +185,7 @@ nav li {
 }
 
 .info {
-    height: 500px;
+    height: auto;
     width: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -197,36 +196,32 @@ nav li {
 
 .info h1 {
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .info p {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .box-1, .box-2{
     opacity: 0;
-    transform: translateX(20px);
-    animation: bio-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 .box-3, .box-4{
     opacity: 0;
-    transform: translateX(-20px);
-    animation: nav-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 .box-5, .box-6{
     opacity: 0;
-    transform: translateX(-20px);
-    animation: bio-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 .box-7, .box-8{
     opacity: 0;
-    transform: translateX(-20px);
-    animation: nav-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 .collections-Container {
@@ -237,64 +232,45 @@ nav li {
 }
 
 .collections {
-    padding: 90px;
     text-align: center;
+}
+
+@keyframes fadeIn-transition {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .collections h1 {
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    padding-top: 150px;
+    padding-top: 60px;
     opacity: 0;
-    transform: translateX(20px);
-    animation: Logo-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
-
-@keyframes up-transition {
-    0%{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 #link-up{
     opacity: 0;
-    transform: translateY(-20px);
-    animation: up-transition 1.5s ease-out forwards; 
-}
-
-@keyframes down-transition {
-    0%{
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 #link-down{
     opacity: 0;
-    transform: translateY(20px);
-    animation: down-transition 1.5s ease-out forwards; 
+    animation: fadeIn-transition 1.5s ease-out forwards; 
 }
 
 .collections-Names {
     display: flex;
-    padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .collections p {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: white;
     margin-right: 60px;
     transition: transform 0.3s ease;
@@ -302,35 +278,34 @@ nav li {
 
 .coll-Link {
     text-decoration: none;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .collections p:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .description-container {
     position: absolute;
-    bottom: 0;
-    left: 100px;
+    bottom: -150px;
+    left: 50px;
     height: 400px;
-    width: 500px;
+    width: 450px;
 }
 
 .description-container h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 30px;
     opacity: 0;
-    transform: translateX(-20px);
-    animation: nav-transition 1.5s ease-out forwards;
+    animation: fadeIn-transition 1.5s ease-out forwards;
 }
 
 .description-container p {
     color: white;
-    font-size: 1rem;opacity: 0;
-    transform: translateX(20px);
-    animation: bio-transition 1.5s ease-out forwards;
+    font-size: 0.8rem;
+    opacity: 0;
+    animation: fadeIn-transition 1.5s ease-out forwards;
 }
 
 .photo-container {

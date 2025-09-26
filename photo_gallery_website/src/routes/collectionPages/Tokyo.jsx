@@ -10,11 +10,16 @@ function tokyo() {
             </div>
 
             <div className="photo-container">
-                <img loading="lazy" className="img-display" src="/images/img1.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img2.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img3.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img4.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img5.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-1.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-2.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-3.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-4.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-5.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-6.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-7.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-8.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-9.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/tokyo-imgs/tokyo-pic-10.jpg" alt="img"></img>
 
             </div>
         </div>

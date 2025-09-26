@@ -10,12 +10,17 @@ function Osaka() {
             </div>
 
             <div className="photo-container">
-                <img loading="lazy" className="img-display" src="/images/img1.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img2.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img3.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img4.jpg" alt="img"></img>
-                <img loading="lazy" className="img-display" src="/images/img5.jpg" alt="img"></img>
-
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-1.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-2.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-3.jpg" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-4.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-5.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-6.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-7.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-8.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-9.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-10.png" alt="img"></img>
+                <img loading="lazy" className="img-display" src="/images/osaka-imgs/osaka-pic-11.png" alt="img"></img>
             </div>
         </div>
     )

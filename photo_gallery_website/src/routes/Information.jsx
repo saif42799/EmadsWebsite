@@ -13,7 +13,7 @@ function Information() {
                 </div>
 
                 <div className="box-2">
-                    <p>I’m Emad Shaikh, a multidisciplinary graphic designer with over three years of experience crafting visuals that blend creativity, clarity, and impact. My journey started long before university, when I taught myself Photoshop and discovered how design could transform simple ideas into compelling stories. Since then, I’ve expanded my toolkit with Illustrator, InDesign, and motion and 3D tools like After Effects, Figma, Blender, and Cinema 4D. I constantly explore new ways to bring concepts to life.</p>
+                    <p>I’m Emad Shaikh, a multidisciplinary graphic designer with over three years of experience crafting visuals that blend creativity, clarity, and impact. My journey started long before university, when I taught myself Photoshop and discovered how design could transform simple ideas into compelling stories. Since then, I’ve expanded my toolkit with Illustrator, InDesign, and motion and 3D tools like After Effects, Figma, Blender, and Cinema 4D. I constantly explore new ways to bring concepts to life. <a href="https://www.instagram.com/_emadshaikh/" target="blank">Instagram</a></p>
                 
                 </div>
 
@@ -40,34 +40,6 @@ function Information() {
                 <div className="box-8">
                     <p>At my core, I’m a designer who loves experimenting, learning, and pushing the boundaries of what design can do to connect with people.</p>
                 </div>
-
-{/* 
-                <div className="box-9">
-                    <h1>DESIGN PHILOSOPHY/STYLE:</h1>
-                    <p>Emad, a self made artist .....@_emadshaikh</p>
-                </div>
-
-                <div className="box-10">
-                    <h1>EXPERTISES:</h1>
-                    <p>Emad, a self made artist .....@_emadshaikh</p>
-
-                </div>
-                   */}
-
-
-
-                {/* <h1>Bio</h1>
-                <p>Emad, a self made artist .....@_emadshaikh</p>
-
-                <h1>Background</h1>
-                <p>Emad, a self made artist .....@_emadshaikh</p>
-
-                <h1>Design Philosophy/Style</h1>
-                <p>Emad, a self made artist .....@_emadshaikh</p>
-
-                <h1>Experites</h1>
-                <p>Emad, a self made artist .....@_emadshaikh</p> */}
-
 
             </div>
         </div>

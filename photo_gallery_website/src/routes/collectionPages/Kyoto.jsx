@@ -3,10 +3,10 @@ function Kyoto() {
         <div>
             <div className="description-container">
                 <h1>KYOTO, JAPAN</h1>
-                <p>The metropolitan area is the largest industrial, commercial,
-                    and  financial centre in Japan. Many domestic and international
-                    financial  institutions and other businesses are headquartered
-                    in central Tokyo.</p>
+                <p>Kyoto moves slower, like it’s holding its breath. 
+                    Ancient shrines, mossy gardens, and fleeting shadows 
+                    of geisha tell stories older than memory. This series 
+                    is about finding beauty in quiet corners and timeless rituals.</p>
             </div>
 
             <div className="photo-container">

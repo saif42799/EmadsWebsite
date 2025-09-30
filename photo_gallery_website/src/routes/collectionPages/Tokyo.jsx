@@ -3,10 +3,10 @@ function tokyo() {
         <div>
             <div className="description-container">
                 <h1>TOKYO, JAPAN</h1>
-                <p>The metropolitan area is the largest industrial, commercial,
-                    and  financial centre in Japan. Many domestic and international
-                    financial  institutions and other businesses are headquartered
-                    in central Tokyo.</p>
+                <p>A restless energy hums through Tokyo neon streets, hidden alleys, 
+                    and quiet temples all colliding in a rhythm that never stops. 
+                    These photos capture the city’s contrasts: the rush of movement 
+                    and the stillness tucked between moments.</p>
             </div>
 
             <div className="photo-container">

@@ -3,10 +3,9 @@ function Osaka() {
                 <div>
             <div className="description-container">
                 <h1>OSAKA, JAPAN</h1>
-                <p>The metropolitan area is the largest industrial, commercial,
-                    and  financial centre in Japan. Many domestic and international
-                    financial  institutions and other businesses are headquartered
-                    in central Tokyo.</p>
+                <p>Osaka feels like a warm handshake. Food stalls spill light onto busy lanes and laughter hangs in the air. 
+                    I aimed to catch the city’s playful heart—the late-night glow, the friendly chaos, the flavors you can 
+                    almost taste through the frame.</p>
             </div>
 
             <div className="photo-container">
